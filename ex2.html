@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>W3 Ex2</title>
+	<script src="js/jquery.js"></script>
+	<script>
+		$(document).ready(
+			function(){
+				$('#changeRed').click(
+					function(){
+						$('p').css('color','red');
+					}
+				);
+				$('#changeSpecials').click(
+					function(){
+						
+							//$('p:contains("special")').css('color','green');
+							$('p')[0].style='color:green';
+						
+					}
+				);
+			}
+		);
+	</script>
+</head>
+<body>
+	<button id="changeRed">Change to Red</button>
+	<button id="changeSpecials">Change Specials to Green</button>
+	<p>This is an ordinary paragragh</p>
+	<p>This is a special paragragh</p>
+	<p>This is an ordinary paragragh</p>
+	<p>This is a special paragragh</p>
+	<p>This is an ordinary paragragh</p>
+	<p>This is an ordinary paragragh</p>
+
+</body>
+</html>

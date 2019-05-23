@@ -4,12 +4,46 @@
     <meta charset="utf-8">
     <title>W3 Ex1</title>
     <script src="js/jquery.js"></script>
+    <style type="text/css">
+        .greenLight{
+            font-weight: 300;
+            color: green;
+        }
+    </style>
     <script>
-        
+        $(document).ready(
+            function(){
+                $('#showHide').click(
+                    function(){
+                        $('#hidePara').fadeToggle();
+                    }
+                );
+                $('#changeText').click(
+                    function(){
+                        $('#hidePara').html('Hi');
+                    }
+                );
+                $('#addHeading').click(
+                    function(){
+                        $('#hidePara').prepend('<h1>My Heading</h1>');
+                    }
+                );
+                $('#colourHeading').click(
+                    function(){
+                        $('h1').addClass('greenLight');
+                        $('h1').css('color','red');
+                    }
+                );
+            }
+        );
     </script>
 </head>
 <body>
     <button id="showHide">Show/Hide</button>
+    <button id="changeText">Change to Hi</button>
+    <button id="addHeading">Add Heading</button>
+    <button id="colourHeading">Colour Heading</button>
+
     <p id="hidePara">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras metus augue, mattis nec erat nec, ornare luctus nunc.
         Morbi tincidunt quis sem ut tempor. Maecenas mollis massa ac mi commodo, eu placerat dolor gravida. Vivamus id venenatis

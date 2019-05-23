@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Rainbow Falls</title>
+        <script src="js/jquery.js"></script>
+        <script>
+            $(document).ready(
+                function(){
+
+                    $('#pic').hover(
+                        function(){
+                            $('#pic').attr('src','rainbow_falls.jpg');
+                        },
+                        function(){
+                            $('#pic').attr('src','falls.jpg');
+                        }
+                    );
+                    /* $('#pic').mouseover(
+                        function(){
+                            $('#pic').attr('src','rainbow_falls.jpg');
+                        }
+                    );
+                    $('#pic').mouseout(
+                        function(){
+                            $('#pic').attr('src','falls.jpg');
+                        }
+                    ); */
+                    $('#pic').on
+                    /* $('#pic').on(
+                        mouseenter(
+                            function(){
+                                $('#pic').attr('src','rainbow_falls.jpg');
+                            }
+                        ),
+                        mouseleave(
+                            function(){
+                                $('#pic').attr('src','falls.jpg');
+                            }
+                        )
+
+                    ); */
+                }
+            );
+        </script>
+    </head>
+    <body>
+        <img src='falls.jpg' id='pic' style='width:300px;height:300px;'>
+    </body>
+</html>
