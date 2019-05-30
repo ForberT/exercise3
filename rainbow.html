@@ -11,9 +11,11 @@
                     $('#pic').hover(
                         function(){
                             $('#pic').attr('src','rainbow_falls.jpg');
+                            $('#pic').fadeOut(2000);
                         },
                         function(){
                             $('#pic').attr('src','falls.jpg');
+                            $('#pic').fadeIn(2000);
                         }
                     );
                     /* $('#pic').mouseover(
